@@ -1,0 +1,206 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.a4-page {
+    width: 70%;
+    max-width: 210mm;
+    min-height: 297mm;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 10mm;
+    box-sizing: border-box;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.profile-pic {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+img {
+    width: 10%;
+    min-width: 100px;
+    height: auto;
+}
+
+.intro {
+    flex: 2;
+    min-width: 250px;
+    text-align: left;
+}
+
+.name {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 40px;
+    display: inline;
+}
+
+.career {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    display: inline;
+}
+
+.container-one,
+.container-two,
+.container-three {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.skill-container,
+.language-container,
+.contact-container {
+    flex: 1;
+    min-width: 250px;
+    width: 30%;
+}
+
+.profile-container,
+.experience-container,
+.education-container {
+    flex: 2;
+    min-width: 250px;
+    width: 65%;
+    margin-left: 20px;
+}
+
+.skill,
+.language,
+.contact-title {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #6495ED;
+    display: inline;
+}
+
+.profile-title,
+.experience-title,
+.education-title {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline;
+}
+
+.line {
+    border-color: #6495ED;
+    margin: 0;
+    border-width: thin 2px;
+}
+
+.language-text,
+.contact-text {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.english-result,
+.chinese-result,
+.malay-result {
+    border-style: solid;
+    border-width: thin;
+    margin: 0;
+    background-color: #89CFF0;
+    text-align: center;
+}
+
+.english-result {
+    width: 70%;
+}
+
+.chinese-result {
+    width: 90%;
+}
+
+.malay-result {
+    width: 50%;
+}
+
+.position {
+    font-weight: bold;
+    margin: 0;
+}
+
+.company {
+    display: inline;
+}
+
+.contact-desc {
+    margin: 0;
+    padding-top: 5px;
+}
+
+.graduatecourse,
+.academic {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .a4-page {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .a4-page {
+        width: 95%;
+    }
+
+    .profile-container,
+    .experience-container,
+    .education-container {
+        margin-left: 10px;
+    }
+
+    img {
+        width: 15%;
+    }
+
+    .name {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .a4-page {
+        width: 98%;
+        padding: 8mm;
+    }
+
+    .profile-container,
+    .experience-container,
+    .education-container {
+        margin-left: 5px;
+    }
+
+    img {
+        width: 20%;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+}
