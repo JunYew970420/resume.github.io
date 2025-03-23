@@ -157,43 +157,22 @@ img {
     margin: 0;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-    .a4-page {
-        width: 90%;
-    }
-}
-
+/* Responsive Design for Mobile Phones Only */
 @media (max-width: 768px) {
     .a4-page {
         width: 95%;
-    }
-
-    .profile-container,
-    .experience-container,
-    .education-container {
-        margin-left: 10px;
-    }
-
-    img {
-        width: 15%;
-    }
-
-    .name {
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 480px) {
-    .a4-page {
-        width: 98%;
         padding: 8mm;
     }
 
-    .profile-container,
-    .experience-container,
-    .education-container {
-        margin-left: 5px;
+    .intro-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic, .intro {
+        min-width: unset;
+        width: 100%;
     }
 
     img {
@@ -202,5 +181,22 @@ img {
 
     .name {
         font-size: 30px;
+    }
+
+    .container-one,
+    .container-two,
+    .container-three {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skill-container,
+    .language-container,
+    .contact-container,
+    .profile-container,
+    .experience-container,
+    .education-container {
+        width: 100%;
+        margin-left: 0;
     }
 }
